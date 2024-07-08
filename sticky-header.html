@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designer Layout</title>
+    <style>
+      .header {
+        background-color: aqua;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border: 1px solid blue;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .bigbox {
+        height: 80vh;
+        background-color: bisque;
+        margin-top: 23px;
+        border: 1px solid black;
+        display: flex;
+      }
+      .box1 {
+        width: 300px;
+        height: 70%;
+        background-color: brown;
+        margin: 23px;
+        padding: 23px;
+      }
+      .box2 {
+        width: 300px;
+        height: 70%;
+        background-color: rgb(156, 22, 22);
+        margin: 23px;
+        padding: 23px;
+      }
+      .fixed-item {
+        padding: 50px;
+        background-color: red;
+        position: fixed;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">This is header</div>
+    </header>
+    <main>
+      <div class="bigbox">
+        <span><div class="box1"></div></span>
+        <span> <div class="box2"></div> </span>
+      </div>
+    </main>
+    <div class="fixed-item">
+        kani
+    </div>
+  </body>
+</html>
